@@ -1,10 +1,30 @@
-.Expenses-container {
-    width: 50%;
-    margin: auto;
-}
+/* .Expenses-container {
+
+} */
+
 .Expenses-item {
-    color: blue;
     display: flex;
+    background-color: blueviolet;
+    /* margin: 10%; */
+    padding: 10px;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
 }
 
+.Expenses-date{
+    /* background-color: blueviolet; */
+    color: #ffffff;
+    font-size: medium;
+}
 
+.Expenses-title{
+    /* background-color: blueviolet; */
+    color: #ffffff;
+    font-size: medium;
+}
+
+.Expenses-cost{
+    /* background-color: blueviolet; */
+    color: #ffffff;
+    font-size: medium;
+}

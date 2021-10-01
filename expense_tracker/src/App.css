@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 } */
+
+.App {
+  width: 50%;
+  margin: auto;
+  color: blueviolet;
+}
