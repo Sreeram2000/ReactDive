@@ -1,0 +1,10 @@
+.Expenses-container {
+    width: 50%;
+    margin: auto;
+}
+.Expenses-item {
+    color: blue;
+    display: flex;
+}
+
+
