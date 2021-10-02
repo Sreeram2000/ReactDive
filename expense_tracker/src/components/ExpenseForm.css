@@ -20,5 +20,13 @@
 .Form-button {
     /* width: ;
     height: ; */
-    margin: 10px;
+    /* margin: 10px; */
+    margin-left: 30px;
+    padding: 5px 10px;
+    border-radius: 10%;
+    color: blueviolet;
+    font-size: medium;
+    font-weight: bold;
+    background-color: white;
+    border: 0.1rem solid blueviolet;
 }
