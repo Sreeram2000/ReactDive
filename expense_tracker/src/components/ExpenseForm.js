@@ -24,18 +24,25 @@ function ExpenseForm() {
         console.log(Expenseobj)
     }
     return (
-        <div className="container">
-            <form className="Form-container" onSubmit={onSubmitHandler}>
-            <h2>Add Expense</h2>
-            <div className="Form-date">Date</div>
-            <input type="date" onChange={dateHandler} />
-            <div className="Form-title">Title</div>
-            <input type="text" onChange={titleHandler}/>
-            <div className="Form-amt">Amount</div>
-            <input type="text" onChange={amtHandler}/>
-            <button className="Form-button" type='submit'>Submit</button>
-            </form>
-        </div>
+        <form className="Form-container" onSubmit={onSubmitHandler}>
+            <div className='new-expense__controls'>
+                <div className='new-expense__controls'> 
+                    <label htmlFor="">Date</label>
+                    <input type="date" onChange={dateHandler} />
+                </div>
+                <div className='new-expense__controls'>
+                    <label htmlFor="">Title</label>
+                    <input type="text" onChange={titleHandler}/>
+                </div>
+                <div className='new-expense__controls'>
+                    <label htmlFor="">Amt</label>
+                    <input type="text" onChange={amtHandler}/>
+                </div>
+                <div className='new-expense__actions'>
+                    <button type='submit'>Submit</button>
+                </div>
+            </div>
+        </form>
     )
 }
 
