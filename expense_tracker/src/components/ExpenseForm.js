@@ -24,7 +24,8 @@ function ExpenseForm() {
         console.log(Expenseobj)
     }
     return (
-        <form className="Form-container" onSubmit={onSubmitHandler}>
+        <div className="container">
+            <form className="Form-container" onSubmit={onSubmitHandler}>
             <h2>Add Expense</h2>
             <div className="Form-date">Date</div>
             <input type="date" onChange={dateHandler} />
@@ -33,7 +34,8 @@ function ExpenseForm() {
             <div className="Form-amt">Amount</div>
             <input type="text" onChange={amtHandler}/>
             <button className="Form-button" type='submit'>Submit</button>
-        </form>
+            </form>
+        </div>
     )
 }
 

@@ -1,8 +1,14 @@
+
+.container {
+    align-items: center;
+}
+
 .Form-container {
     margin: 10px;
     background-color: blueviolet;
     color: white;
     padding: 10px;
+    font-size: large;
 }
 
 .Form-date {
@@ -20,7 +26,7 @@
 .Form-button {
     /* width: ;
     height: ; */
-    /* margin: 10px; */
+    margin: 10px;
     margin-left: 30px;
     padding: 5px 10px;
     border-radius: 10%;
@@ -29,4 +35,5 @@
     font-weight: bold;
     background-color: white;
     border: 0.1rem solid blueviolet;
+    display: block;
 }
