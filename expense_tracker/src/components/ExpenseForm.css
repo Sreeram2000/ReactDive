@@ -1,0 +1,24 @@
+.Form-container {
+    margin: 10px;
+    background-color: blueviolet;
+    color: white;
+    padding: 10px;
+}
+
+.Form-date {
+    padding:10px;
+}
+
+.Form-title{
+    padding:10px;
+}
+
+.Form-amt{
+    padding:10px;
+}
+
+.Form-button {
+    /* width: ;
+    height: ; */
+    margin: 10px;
+}
