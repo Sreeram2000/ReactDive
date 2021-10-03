@@ -1,5 +1,6 @@
 import React,{useState} from 'react';
 import './ExpenseForm.css';
+import ExpenseList from './ExpenseList'
 export default ExpenseForm
 function ExpenseForm() {
     const [title,setTitle] = useState("")
@@ -24,25 +25,27 @@ function ExpenseForm() {
         console.log(Expenseobj)
     }
     return (
-        <form className="Form-container" onSubmit={onSubmitHandler}>
-            <div className='new-expense__controls'>
-                <div className='new-expense__controls'> 
-                    <label htmlFor="">Date</label>
-                    <input type="date" onChange={dateHandler} />
-                </div>
+        <div>   
+            <form className="Form-container" onSubmit={onSubmitHandler}>
                 <div className='new-expense__controls'>
-                    <label htmlFor="">Title</label>
-                    <input type="text" onChange={titleHandler}/>
+                    <div className='new-expense__controls'> 
+                        <label htmlFor="">Date</label>
+                        <input type="date" onChange={dateHandler} />
+                    </div>
+                    <div className='new-expense__controls'>
+                        <label htmlFor="">Title</label>
+                        <input type="text" onChange={titleHandler}/>
+                    </div>
+                    <div className='new-expense__controls'>
+                        <label htmlFor="">Amt</label>
+                        <input type="text" onChange={amtHandler}/>
+                    </div>
+                    <div className='new-expense__actions'>
+                        <button type='submit'>Submit</button>
+                    </div>
                 </div>
-                <div className='new-expense__controls'>
-                    <label htmlFor="">Amt</label>
-                    <input type="text" onChange={amtHandler}/>
-                </div>
-                <div className='new-expense__actions'>
-                    <button type='submit'>Submit</button>
-                </div>
-            </div>
-        </form>
+            </form>
+        </div>
     )
 }
 
