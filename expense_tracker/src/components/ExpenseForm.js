@@ -1,8 +1,10 @@
 import React,{useState} from 'react';
 import './ExpenseForm.css';
-import ExpenseList from './ExpenseList'
+import Expenses from './Expenses';
+// import ExpenseList from './ExpenseList'
 export default ExpenseForm
-function ExpenseForm() {
+function ExpenseForm(props) {
+    const [Expense,setExpense] = useState(props.expense)
     const [title,setTitle] = useState("")
     const [amt,setAmt] = useState("")
     const [date,setDate] = useState("")
@@ -17,12 +19,19 @@ function ExpenseForm() {
     }
     function onSubmitHandler(event){
         event.preventDefault()
-        const Expenseobj = {
-            title,
-            amt,
-            date : new Date(date)
-        }
+        const Expenseobj = {date,title,amt}
         console.log(Expenseobj)
+        setExpense((prev) => {
+            return [
+                ...prev,
+                {
+                    date:date,
+                    title:title,
+                    cost:amt
+                }
+            ]
+        })
+        return Expense
     }
     return (
         <div>   

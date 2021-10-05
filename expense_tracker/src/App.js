@@ -23,10 +23,12 @@ function App() {
   return (
     <div className="App">
       <h2>Hello! Lets See How You Did This Month..</h2>
-      <ExpenseForm />
-      <Expenses expenses={expense[0]} />
-      <Expenses expenses={expense[1]} />
-      <Expenses expenses={expense[2]} />
+      <ExpenseForm expense={expense}/>
+      {
+        expense.map((expense) => {
+          return <Expenses expenses={expense} />
+        })
+      }
     </div>
   );
 }
