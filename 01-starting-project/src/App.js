@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import CourseGoalList from './components/CourseGoals/CourseGoalList/CourseGoalList';
 import CourseInput from './components/CourseGoals/CourseInput/CourseInput';
 import './App.css';
-
+// CourseInput and CourseGoalList components are used and props are passed 
 const App = () => {
   const [courseGoals, setCourseGoals] = useState([
     { text: 'Do all exercises!', id: 'g1' },
