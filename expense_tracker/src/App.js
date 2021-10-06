@@ -1,4 +1,5 @@
 import './App.css';
+import React,{ useState } from 'react'; 
 import Expenses from './components/Expenses'
 import ExpenseForm from './components/ExpenseForm';
 function App() {
@@ -20,12 +21,21 @@ function App() {
     }
   ]
 
+  const [Details,setDetails] = useState(expense)
+
+  function addHandler(udate,utitle,ucost){
+    return (
+        setDetails((prev) => {return [...prev,{date:udate,title:utitle,cost:ucost}]}
+      )
+    )
+  }
+
   return (
     <div className="App">
       <h2>Hello! Lets See How You Did This Month..</h2>
-      <ExpenseForm expense={expense}/>
+      <ExpenseForm onAddHandler={addHandler}/>
       {
-        expense.map((expense) => {
+        Details.map((expense) => {
           return <Expenses expenses={expense} />
         })
       }

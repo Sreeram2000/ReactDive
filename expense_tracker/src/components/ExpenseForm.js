@@ -4,7 +4,7 @@ import Expenses from './Expenses';
 // import ExpenseList from './ExpenseList'
 export default ExpenseForm
 function ExpenseForm(props) {
-    const [Expense,setExpense] = useState(props.expense)
+    // const [Expense,setExpense] = useState(props.expense)
     const [title,setTitle] = useState("")
     const [amt,setAmt] = useState("")
     const [date,setDate] = useState("")
@@ -19,19 +19,7 @@ function ExpenseForm(props) {
     }
     function onSubmitHandler(event){
         event.preventDefault()
-        const Expenseobj = {date,title,amt}
-        console.log(Expenseobj)
-        setExpense((prev) => {
-            return [
-                ...prev,
-                {
-                    date:date,
-                    title:title,
-                    cost:amt
-                }
-            ]
-        })
-        return Expense
+        props.onAddHandler(date,title,amt)
     }
     return (
         <div>   
