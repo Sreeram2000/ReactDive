@@ -20,11 +20,11 @@ function PageForm(props) {
         <form className="main-container" onSubmit={onHandler}> 
             <div className="main-form">
                 <label htmlFor="name">Name</label>
-                <input type="text"  onChange={nameHandler}/>
+                <input type="text" value={Name} onChange={nameHandler}/>
             </div>
             <div className="main-form">
-                <label htmlFor="Age"></label>
-                <input type="text"  onChange={ageHandler}/>
+                <label htmlFor="Age">Age</label>
+                <input type="text" value={Age} onChange={ageHandler}/>
             </div>
             <div className="main-form">
                 <button type="submit">Update</button>

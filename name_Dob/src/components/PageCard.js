@@ -1,9 +1,9 @@
 import './PageCard.css'
-function PageCard() {
+function PageCard(props) {
     return (
         <div className="main-div"> 
-            <div className="main-content">Name</div>
-            <div className="main-content">AgeInYears</div>
+            <div className="main-content">{props.dob.Name}</div>
+            <div className="main-content">{props.dob.Age}</div>
         </div>
     )
 }
