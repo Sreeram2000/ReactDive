@@ -1,0 +1,14 @@
+.main-div {
+    margin: auto;
+    color : blueviolet;
+    align-items: center;
+    width: 50%;
+    display: flex;
+}
+
+
+.main-content {
+    color : blueviolet;
+    padding: 10px;
+    margin: 20px;
+}

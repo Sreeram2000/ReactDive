@@ -1,0 +1,15 @@
+.main-container {
+    color: blueviolet;
+    width: 50%;
+    /* display: ; */
+    align-content: center;
+    margin: auto;
+}
+
+input{
+    margin-left: 5px;
+}
+
+.main-form {
+    padding: 10px;
+}
