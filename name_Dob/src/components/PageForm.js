@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import './PageForm.css' 
+//Add useState and onHandler to pageForm
 function PageForm(props) {
     const [Name, setName] = useState("")
     const [Age, setAge] = useState("")
