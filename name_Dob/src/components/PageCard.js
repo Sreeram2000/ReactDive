@@ -1,4 +1,5 @@
 import './PageCard.css'
+//pageCard return div elements
 function PageCard(props) {
     return (
         <div className="main-div"> 
