@@ -3,6 +3,7 @@ import {useState} from 'react'
 import PageForm from './components/PageForm';
 import PageCard from './components/PageCard'
 
+//Create object dob and add first name annd age. 
 
 function App() {
   const dob = [
