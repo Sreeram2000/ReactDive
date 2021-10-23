@@ -4,7 +4,7 @@ import PageForm from './components/PageForm';
 import PageCard from './components/PageCard'
 
 //Create object dob and add first name annd age. 
-
+//use prev in setDob() to get all previous states
 function App() {
   const dob = [
     {
