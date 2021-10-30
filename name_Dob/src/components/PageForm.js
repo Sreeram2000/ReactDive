@@ -1,6 +1,26 @@
 import React,{useState} from 'react'
 import './PageForm.css' 
 //Add useState and onHandler to pageForm
+
+
+// function PageForm(props) {
+//     const [Name, setName] = useState("")
+//     const [Age, setAge] = useState("")
+//     function nameHandler(event) {
+//         setName(event.target.value)
+//     }
+//     function ageHandler(event) {
+//         setAge(event.target.value)
+//     }
+
+//     function onHandler(event) {
+//         event.preventDefault()
+//         props.onSubmitHandler(Name,Age)
+//         setName("")
+//         setAge("")
+//     }
+
+
 function PageForm(props) {
     const [Name, setName] = useState("")
     const [Age, setAge] = useState("")
