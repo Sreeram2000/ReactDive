@@ -37,8 +37,17 @@
   }
 } */
 
+
 .App {
   width: 50%;
   margin: auto;
   color: blueviolet;
 }
+
+
+/* 
+.App {
+  width: 50%;
+  margin: auto;
+  color: blueviolet;
+} */
